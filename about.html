@@ -5,44 +5,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us - Hanshraj Pharmacy</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/script.js" defer></script>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#fdfaf6;color:#333;}
+header{background:#1a3d7c;color:white;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;position:sticky;top:0;z-index:100;}
+header nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold;}
+.lang-switcher button{background:none;border:none;color:white;cursor:pointer;font-weight:bold;}
+.hero{background:url('https://images.unsplash.com/photo-1580281657524-54b9e0f8705b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.7);}
+section{padding:50px 20px;}
+section img{width:100%;border-radius:15px;margin-top:20px;}
+footer{background:#1a3d7c;color:white;text-align:center;padding:20px;}
+</style>
+<script>
+function setLanguage(lang){document.querySelectorAll('[data-en][data-ne]').forEach(el=>{el.textContent=lang==='en'?el.dataset.en:el.dataset.ne;});}
+</script>
 </head>
 <body>
 <header>
-    <img src="assets/images/logo.png" alt="Hanshraj Pharmacy" style="height:50px;">
-    <nav>
-        <a href="index.html" data-en="Home" data-ne="मुख्य पृष्ठ">Home</a>
-        <a href="about.html" data-en="About Us" data-ne="हाम्रो बारेमा">About Us</a>
-        <a href="services.html" data-en="Services" data-ne="हाम्रो सेवा">Services</a>
-        <a href="products.html" data-en="Products" data-ne="उत्पादन">Products</a>
-        <a href="contact.html" data-en="Contact" data-ne="सम्पर्क">Contact</a>
-        <span class="lang-switcher">
-            <button onclick="setLanguage('en')">English</button> |
-            <button onclick="setLanguage('ne')">नेपाली</button>
-        </span>
-    </nav>
+<img src="assets/images/logo.png" alt="Hanshraj Pharmacy" style="height:50px;">
+<nav>
+<a href="index.html" data-en="Home" data-ne="मुख्य पृष्ठ">Home</a>
+<a href="about.html" data-en="About Us" data-ne="हाम्रो बारेमा">About Us</a>
+<a href="services.html" data-en="Services" data-ne="हाम्रो सेवा">Services</a>
+<a href="products.html" data-en="Products" data-ne="उत्पादन">Products</a>
+<a href="contact.html" data-en="Contact" data-ne="सम्पर्क">Contact</a>
+<span class="lang-switcher">
+<button onclick="setLanguage('en')">English</button> |
+<button onclick="setLanguage('ne')">नेपाली</button>
+</span>
+</nav>
 </header>
-<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1588776814546-4329e0be97cf?auto=format&fit=crop&w=1470&q=80');">
-    <h1 data-en="About Hanshraj Pharmacy" data-ne="हंसराज फार्मेसी बारे">About Hanshraj Pharmacy</h1>
-    <p data-en="Serving the community with care" data-ne="समुदायको हेरचाह गर्दै सेवा गर्दै">Serving the community with care</p>
+<section class="hero">
+<h1 data-en="About Hanshraj Pharmacy" data-ne="हंसराज फार्मेसी बारे">About Hanshraj Pharmacy</h1>
+<p data-en="Serving the community with care" data-ne="समुदायको हेरचाह गर्दै सेवा गर्दै">Serving the community with care</p>
 </section>
 <section>
-    <h2 data-en="Our Story" data-ne="हाम्रो कथा">Our Story</h2>
-    <p data-en="Hanshraj Pharmacy was established to provide quality healthcare to the community in Sarlahi, Nepal." data-ne="हंसराज फार्मेसी सर्लाही, नेपालमा गुणस्तरीय स्वास्थ्य सेवा प्रदान गर्न स्थापना गरिएको हो।">Hanshraj Pharmacy was established to provide quality healthcare to the community in Sarlahi, Nepal.</p>
-    <img src="https://images.unsplash.com/photo-1580281657524-54b9e0f8705b?auto=format&fit=crop&w=600&q=80" alt="Pharmacy store" style="width:100%; border-radius:15px; margin-top:20px;">
+<h2 data-en="Our Story" data-ne="हाम्रो कथा">Our Story</h2>
+<p data-en="Hanshraj Pharmacy was established to provide quality healthcare to the community in Sarlahi, Nepal." data-ne="हंसराज फार्मेसी सर्लाही, नेपालमा गुणस्तरीय स्वास्थ्य सेवा प्रदान गर्न स्थापना गरिएको हो।">Hanshraj Pharmacy was established to provide quality healthcare to the community in Sarlahi, Nepal.</p>
+<img src="https://images.unsplash.com/photo-1580281657524-54b9e0f8705b?auto=format&fit=crop&w=600&q=80" alt="Pharmacy store">
 </section>
 <section>
-    <h2 data-en="Our Mission" data-ne="हाम्रो लक्ष्य">Our Mission</h2>
-    <p data-en="To ensure that every individual has access to quality medicines and healthcare guidance." data-ne="हरेक व्यक्तिलाई गुणस्तरीय औषधि र स्वास्थ्य सल्लाह उपलब्ध गराउने।">To ensure that every individual has access to quality medicines and healthcare guidance.</p>
+<h2 data-en="Our Mission" data-ne="हाम्रो लक्ष्य">Our Mission</h2>
+<p data-en="To ensure that every individual has access to quality medicines and healthcare guidance." data-ne="हरेक व्यक्तिलाई गुणस्तरीय औषधि र स्वास्थ्य सल्लाह उपलब्ध गराउने।">To ensure that every individual has access to quality medicines and healthcare guidance.</p>
 </section>
 <section>
-    <h2 data-en="Our Vision" data-ne="हाम्रो दृष्टिकोण">Our Vision</h2>
-    <p data-en="To be the most trusted pharmacy in Sarlahi and contribute to a healthier community." data-ne="सर्लाहीमा सबैभन्दा विश्वासिलो फार्मेसी बन्ने र स्वस्थ समुदायको निर्माणमा योगदान गर्ने।">To be the most trusted pharmacy in Sarlahi and contribute to a healthier community.</p>
+<h2 data-en="Our Vision" data-ne="हाम्रो दृष्टिकोण">Our Vision</h2>
+<p data-en="To be the most trusted pharmacy in Sarlahi and contribute to a healthier community." data-ne="सर्लाहीमा सबैभन्दा विश्वासिलो फार्मेसी बन्ने र स्वस्थ समुदायको निर्माणमा योगदान गर्ने।">To be the most trusted pharmacy in Sarlahi and contribute to a healthier community.</p>
 </section>
 <footer>
-    <p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
+<p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
 </footer>
 </body>
 </html>
-
