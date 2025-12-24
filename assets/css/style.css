@@ -1,6 +1,5 @@
 /*
-Complete Hanshraj Pharmacy website with multi-page support and Nepali/English toggle.
-Folder structure ready for GitHub Pages.
+This is a visually rich version of Hanshraj Pharmacy website with Nepali motifs, hero banner, services/products cards, online images, and English/Nepali toggle.
 */
 
 /* ====== assets/css/style.css ====== */
@@ -18,11 +17,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 header nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 .lang-switcher button {
     background: none;
@@ -31,24 +34,52 @@ header nav a {
     cursor: pointer;
     font-weight: bold;
 }
+.hero {
+    background: url('https://images.unsplash.com/photo-1588776814546-4329e0be97cf?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
 section {
+    padding: 50px 20px;
+}
+.services, .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 15px;
     padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
 }
 footer {
     background-color: #1a3d7c;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 .decorative-border {
     border-top: 4px solid #1a3d7c;
-    border-image: repeating-linear-gradient(
-        to right,
-        #1a3d7c 0,
-        #1a3d7c 10px,
-        transparent 10px,
-        transparent 20px
-    ) 20 stretch;
+    border-image: repeating-linear-gradient(to right,#1a3d7c 0, #1a3d7c 10px, transparent 10px, transparent 20px) 20 stretch;
     margin-bottom: 20px;
 }
 
+/* ====== assets/js/script.js ====== */
+function setLanguage(lang) {
+    const elements = document.querySelectorAll('[data-en][data-ne]');
+    elements.forEach(el => {
+        el.textContent = lang === 'en' ? el.dataset.en : el.dataset.ne;
+    });
+}
