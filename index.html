@@ -4,74 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hanshraj Pharmacy</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#fdfaf6;color:#333;}
-header{background:#1a3d7c;color:white;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;position:sticky;top:0;z-index:100;}
-header nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold;}
-.lang-switcher button{background:none;border:none;color:white;cursor:pointer;font-weight:bold;}
-.hero{background:url('https://images.unsplash.com/photo-1588776814546-4329e0be97cf?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-shadow:2px 2px 5px rgba(0,0,0,0.7);}
-section{padding:50px 20px;}
-.services,.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.card{background:white;border-radius:15px;padding:20px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-.card img{width:80px;height:80px;margin-bottom:15px;}
-footer{background:#1a3d7c;color:white;text-align:center;padding:20px;}
-</style>
-<script>
-function setLanguage(lang){
-  document.querySelectorAll('[data-en][data-ne]').forEach(el=>{
-    el.textContent=lang==='en'?el.dataset.en:el.dataset.ne;
-  });
-}
-</script>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header>
-<img src="assets/images/logo.png" alt="Hanshraj Pharmacy" style="height:50px;">
-<nav>
-<a href="index.html" data-en="Home" data-ne="मुख्य पृष्ठ">Home</a>
-<a href="about.html" data-en="About Us" data-ne="हाम्रो बारेमा">About Us</a>
-<a href="services.html" data-en="Services" data-ne="हाम्रो सेवा">Services</a>
-<a href="products.html" data-en="Products" data-ne="उत्पादन">Products</a>
-<a href="contact.html" data-en="Contact" data-ne="सम्पर्क">Contact</a>
-<span class="lang-switcher">
-<button onclick="setLanguage('en')">English</button> |
-<button onclick="setLanguage('ne')">नेपाली</button>
-</span>
-</nav>
+    <img src="assets/images/logo.png" alt="Hanshraj Pharmacy" class="logo">
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+        <span class="lang-switcher">
+            <button onclick="setLanguage('en')">English</button> | 
+            <button onclick="setLanguage('ne')">नेपाली</button>
+        </span>
+    </nav>
 </header>
 
 <section class="hero">
-<h1 data-en="Welcome to Hanshraj Pharmacy" data-ne="हंसराज फार्मेसीमा स्वागत छ">Welcome to Hanshraj Pharmacy</h1>
-<p data-en="Your health, our priority" data-ne="तपाईंको स्वास्थ्य, हाम्रो प्राथमिकता">Your health, our priority</p>
+    <div class="hero-text">
+        <h1>Welcome to Hanshraj Pharmacy</h1>
+        <p>Your trusted pharmacy in Barahathawa, Sarlahi</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+    <img src="images/main/pamplets.jpg" alt="Pharmacy Hero Image" class="hero-img">
 </section>
 
-<section class="services">
-<h2 data-en="Our Services" data-ne="हाम्रो सेवा">Our Services</h2>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1588776814546-4329e0be97cf?auto=format&fit=crop&w=80&q=80" alt="Prescription">
-<h3 data-en="Prescription Refills" data-ne="पर्चा रिफिल">Prescription Refills</h3>
-<p data-en="Refill your prescriptions easily." data-ne="आफ्नो पर्चा सजिलै रिफिल गर्नुहोस्।">Refill your prescriptions easily.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1580281657524-54b9e0f8705b?auto=format&fit=crop&w=80&q=80" alt="Consultation">
-<h3 data-en="Consultation" data-ne="सलाह">Consultation</h3>
-<p data-en="Get advice from our pharmacists." data-ne="हाम्रो फार्मासिस्टबाट सल्लाह प्राप्त गर्नुहोस्।">Get advice from our pharmacists.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1588776814546-4329e0be97cf?auto=format&fit=crop&w=80&q=80" alt="Home Delivery">
-<h3 data-en="Home Delivery" data-ne="घरमा डेलिभरी">Home Delivery</h3>
-<p data-en="We deliver medicines to your doorstep." data-ne="हामी तपाईंको ढोकासम्म औषधि डेलिभर गर्छौं।">We deliver medicines to your doorstep.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1580281657524-54b9e0f8705b?auto=format&fit=crop&w=80&q=80" alt="Pickup">
-<h3 data-en="Pickup" data-ne="पिकअप">Pickup</h3>
-<p data-en="Collect your orders conveniently." data-ne="तपाईंको अर्डर सजिलै लिनुहोस्।">Collect your orders conveniently.</p>
-</div>
+<section class="home-services">
+    <h2>Our Key Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Prescription Refills</h3>
+            <p>Fast and accurate refill services with friendly staff.</p>
+        </div>
+        <div class="service-card">
+            <h3>Home Delivery</h3>
+            <p>Free medication delivery within local area.</p>
+        </div>
+        <div class="service-card">
+            <h3>Over-The-Counter</h3>
+            <p>Vitamins, supplements, and wellness products available.</p>
+        </div>
+        <div class="service-card">
+            <h3>Consultation</h3>
+            <p>Professional advice from registered pharmacists.</p>
+        </div>
+    </div>
+</section>
+
+<section class="home-about">
+    <h2>About Hanshraj Pharmacy</h2>
+    <p>Serving the Sarlahi community with quality medicines and healthcare products. We are committed to providing the best service and health support.</p>
+    <a href="about.html" class="btn">Learn More</a>
 </section>
 
 <footer>
-<p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
+    <p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
 </footer>
+
 </body>
 </html>

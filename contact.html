@@ -5,62 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - Hanshraj Pharmacy</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/script.js" defer></script>
 </head>
 <body>
+
 <header>
-    <img src="assets/images/logo.png" alt="Hanshraj Pharmacy" style="height:50px;">
+    <img src="assets/images/logo.png" alt="Hanshraj Pharmacy" class="logo">
     <nav>
-        <a href="index.html" data-en="Home" data-ne="मुख्य पृष्ठ">Home</a>
-        <a href="about.html" data-en="About Us" data-ne="हाम्रो बारेमा">About Us</a>
-        <a href="services.html" data-en="Services" data-ne="हाम्रो सेवा">Services</a>
-        <a href="products.html" data-en="Products" data-ne="उत्पादन">Products</a>
-        <a href="contact.html" data-en="Contact" data-ne="सम्पर्क">Contact</a>
-        <span class="lang-switcher">
-            <button onclick="setLanguage('en')">English</button> |
-            <button onclick="setLanguage('ne')">नेपाली</button>
-        </span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="active">Contact</a>
     </nav>
 </header>
 
 <section class="hero hero-contact">
-    <h1 data-en="Contact Us" data-ne="सम्पर्क गर्नुहोस्">Contact Us</h1>
+    <h1>Contact Us</h1>
+    <p>We are here to help!</p>
 </section>
 
 <section class="contact-wrapper">
 
-  <div class="contact-top">
+    <div class="contact-top">
 
-    <div class="contact-box">
-      <h2>Contact Us</h2>
-      <p><strong>Address:</strong> Barahathawa Na. Pa. 07, Sarlahi, Nepal</p>
-      <p><strong>Phone:</strong> 046-540508</p>
-      <p><strong>Email:</strong> info.hanshrajpharmacy@gmail.com</p>
-      <p><strong>Hours:</strong> 7:00 AM – 8:30 PM</p>
+        <div class="contact-box">
+            <h2>Contact Info</h2>
+            <p><strong>Address:</strong> Barahathawa Na. Pa. 07, Sarlahi, Nepal</p>
+            <p><strong>Phone:</strong> 046-540508</p>
+            <p><strong>Email:</strong> info.hanshrajpharmacy@gmail.com</p>
+            <p><strong>Hours:</strong> 7:00 AM – 8:30 PM</p>
+        </div>
+
+        <div class="contact-box map-box">
+            <iframe
+              src="https://www.google.com/maps?q=दिपेक चलचित्र मन्दिर बरहथवा&z=15&output=embed"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+        </div>
+
     </div>
 
-    <div class="contact-box map-box">
-      <iframe
-        src="https://www.google.com/maps?q=दिपेक चलचित्र मन्दिर बरहथवा&z=15&output=embed"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
+    <div class="contact-box contact-form-box">
+        <h2>Send Us a Message</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-
-  </div>
-
-  <div class="contact-box contact-form-box">
-    <h2>Send Us a Message</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
 
 </section>
-
 
 <footer>
     <p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
