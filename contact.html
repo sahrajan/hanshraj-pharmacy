@@ -1,63 +1,269 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact - Hanshraj Pharmacy</title>
+
 <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+
+.contact-form-box form{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea,
+.contact-form-box select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:15px;
+}
+
+.contact-form-box button{
+background:#2f7d32;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+.contact-form-box button:hover{
+background:#1f5e23;
+}
+
+#form-status{
+margin-top:10px;
+font-weight:bold;
+}
+
+.quick-contact{
+margin-top:20px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.quick-contact a{
+padding:10px 15px;
+border-radius:5px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.call-btn{
+background:#1976d2;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.email-btn{
+background:#444;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <img src="assets/images/logo.png" alt="Hanshraj Pharmacy" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
+
+<img src="assets/images/logo.png" alt="Hanshraj Pharmacy" class="logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+
 </header>
 
 <section class="hero hero-contact">
-    <h1>Contact Us</h1>
-    <p>We are here to help!</p>
+<h1>Contact Hanshraj Pharmacy</h1>
+<p>We are here to help you 24/7</p>
 </section>
 
 <section class="contact-wrapper">
 
-    <div class="contact-top">
+<div class="contact-top">
 
-        <div class="contact-box">
-            <h2>Contact Info</h2>
-            <p><strong>Address:</strong> Barahathawa Na. Pa. 07, Sarlahi, Nepal</p>
-            <p><strong>Phone:</strong> 046-540508</p>
-            <p><strong>Email:</strong> info.hanshrajpharmacy@gmail.com</p>
-            <p><strong>Hours:</strong> 7:00 AM – 8:30 PM</p>
-        </div>
+<div class="contact-box">
 
-        <div class="contact-box map-box">
-            
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.108021290278!2d85.46531250000001!3d26.9951325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec8558191ee02f%3A0xd489e6cd180bb35b!2zSGFuc2hyYWogUGhhcm1hY3kgQmFyYWhhdGhhd2EgKOCkueCkguCktuCksOCkvuCknCDgpKvgpL7gpLDgpY3gpK7gpYfgpLjgpYAp!5e0!3m2!1sen!2sus!4v1773179740681!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+<h2>Contact Information</h2>
 
-    </div>
+<p><strong>Address:</strong><br>
+Barahathawa Na. Pa. 07, Sarlahi, Nepal
+</p>
 
-    <div class="contact-box contact-form-box">
-        <h2>Send Us a Message</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+<p><strong>Phone:</strong><br>
+046-540508<br>
+9763351466
+</p>
+
+<p><strong>Email:</strong><br>
+info.hanshrajpharmacy@gmail.com
+</p>
+
+<p><strong>Regular Hours:</strong><br>
+6:00 AM – 10:30 PM
+</p>
+
+<p><strong>Emergency:</strong><br>
+24 Hours (Call Above Number)
+</p>
+
+<div class="quick-contact">
+
+<a class="call-btn" href="tel:+9779763351466">📞 Call Now</a>
+
+<a class="whatsapp-btn" href="https://wa.me/9779763351466?text=Hello%20Hanshraj%20Pharmacy%2C%20I%20need%20medicine%20information." target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="email-btn" href="mailto:info.hanshrajpharmacy@gmail.com">
+✉ Email
+</a>
+
+</div>
+
+</div>
+
+<div class="contact-box map-box">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.108021290278!2d85.46531250000001!3d26.9951325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec8558191ee02f%3A0xd489e6cd180bb35b!2zSGFuc2hyYWogUGhhcm1hY3kgQmFyYWhhdGhhd2EgKOCkueCkguCktuCksOCkvuCknCDgpKvgpL7gpLDgpY3gpK7gpYfgpLjgpYAp!5e0!3m2!1sen!2sus!4v1773179740681!5m2!1sen!2sus"
+width="100%"
+height="200"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+<div class="contact-box contact-form-box">
+
+<h2>Send Us a Message</h2>
+
+<form id="contact-form"
+action="https://formspree.io/f/xnjgprqj"
+method="POST">
+
+<input type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+<input type="tel"
+name="phone"
+placeholder="Phone Number">
+
+<select name="subject">
+
+<option value="">Select Subject</option>
+
+<option>Medicine Inquiry</option>
+
+<option>Order Medicine</option>
+
+<option>Prescription Help</option>
+
+<option>General Question</option>
+
+</select>
+
+<textarea
+name="message"
+rows="5"
+placeholder="Write your message..."
+required></textarea>
+
+<input type="hidden"
+name="_subject"
+value="New Message from Hanshraj Pharmacy Website">
+
+<input type="text"
+name="_gotcha"
+style="display:none">
+
+<button type="submit">
+Send Message
+</button>
+
+<p id="form-status"></p>
+
+</form>
+
+</div>
 
 </section>
 
 <footer>
-    <p>&copy; 2025 Hanshraj Pharmacy. All rights reserved.</p>
+<p>© 2026 Hanshraj Pharmacy. All rights reserved.</p>
 </footer>
+
+<script>
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+async function handleSubmit(event){
+
+event.preventDefault();
+
+const data = new FormData(event.target);
+
+fetch(event.target.action,{
+method:form.method,
+body:data,
+headers:{'Accept':'application/json'}
+
+}).then(response=>{
+
+if(response.ok){
+
+status.innerHTML="✅ Message sent successfully!";
+form.reset();
+
+}else{
+
+status.innerHTML="❌ Error sending message.";
+
+}
+
+}).catch(()=>{
+
+status.innerHTML="❌ Network error.";
+
+});
+
+}
+
+form.addEventListener("submit",handleSubmit)
+
+</script>
+
 </body>
 </html>
